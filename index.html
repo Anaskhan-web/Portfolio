@@ -553,21 +553,24 @@
         <div><span>Cybersecurity Analyst</span></div>
       </div>
     </div>
-    <div class="contact-form-area">
+
+    <!-- FORM WITH FORMSPREE -->
+    <form action="https://formspree.io/f/xaqzglze" method="POST" class="contact-form-area">
       <div class="form-group">
         <label>Your Name</label>
-        <input type="text" placeholder="Full name" />
+        <input type="text" name="name" placeholder="Full name" required />
       </div>
       <div class="form-group">
         <label>Email Address</label>
-        <input type="email" placeholder="muhdanas165@gmail.com" />
+        <input type="email" name="email" placeholder="muhdanas165@gmail.com" required />
       </div>
       <div class="form-group">
         <label>Message</label>
-        <textarea placeholder="Write your message here..."></textarea>
+        <textarea name="message" placeholder="Write your message here..." required></textarea>
       </div>
-      <button class="btn-primary" style="align-self: flex-start;">Send Message</button>
-    </div>
+      <button type="submit" class="btn-primary" style="align-self: flex-start;">Send Message</button>
+    </form>
+
   </div>
 </section>
 
